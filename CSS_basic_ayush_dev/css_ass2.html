@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS assignment 2</title>
+    <style>
+        /* text design for all content */
+       body{
+            max-width: 70%;
+            margin: auto;
+       }
+        *{
+            text-align: center;
+            font-size: 30px;
+            text-transform: capitalize;
+            color: white;
+            
+        }
+
+        /* for head content */
+        .header {
+            background-color: rebeccapurple;
+            padding: 20px;
+            margin: 0px 10px;
+        }
+
+        /* grid body design */
+        .mid{
+            margin: 10px;
+        }
+        .left {
+            background-color: blueviolet;
+            padding: 10px;
+            height: 400px;
+            width: 480px;
+            float: left;
+            margin-bottom: 10px;
+        }
+
+        .right {
+            overflow: hidden;
+        }
+        .main1 {       
+            background-color: rosybrown;
+            padding: 10px;
+            height: 275px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        .main2 {
+            background-color: skyblue;
+            padding: 40px;
+            margin-left: 10px;
+        }
+        /* footer design */
+        .footer {
+            clear: both;
+            background-color: chartreuse;
+            padding: 50px 0px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">Header</div>
+    <!-- grid container -->
+    <div class="mid">
+        <div class="left">Side bar</div>
+        <!-- right grid -->
+        <div class="right">
+            <div class="main1">main content</div>
+            <div class="main2">extra main</div>
+        </div>
+    </div>
+    <div class="footer">Footer</div>
+</body>
+
+</html>

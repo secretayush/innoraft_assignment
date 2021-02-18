@@ -1,0 +1,173 @@
+*{
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+body {
+  margin: 0px;
+}
+
+/* navigation bar */
+nav {
+  background-color: darkturquoise;
+  font-size: 20px;
+  margin: 0px;
+  overflow: hidden;
+}
+#nav_list {
+  max-width: 70%;
+  margin: auto auto;
+}
+
+#nav_list > ul {
+  float: right;
+}
+#nav_list > ul > li {
+  
+  list-style-type: none;
+  display: inline-block;
+  margin-right: -5px;
+  padding: 20px 16px;
+}
+#logo {
+  float: left;
+  margin: 5px 0px;
+}
+#home{
+  background-color: black;
+} 
+li:hover{
+  background-color: black;
+  color: white;
+}
+
+/* for header content */
+header {
+  background-color: rebeccapurple;
+  margin-bottom: 10px;
+}
+
+.header {
+  max-width: 70%;
+  margin: auto auto;
+  padding: 50px 0px;
+  position: relative;
+}
+#img1{
+  position: absolute;
+  top: 40%;
+  left: 0%;
+}
+#img2{
+  position: absolute;
+  top: 40%;
+  right: 0%;
+}
+.header h1 {
+  font-size: 80px;
+  font-family: sans-serif;
+}
+
+
+
+/* grid body design */
+.center {
+  display: flex;
+  max-width: 70%;
+  margin: auto auto;
+}
+
+.left {
+  background-color: blueviolet;
+  position: relative;
+  width: 100%;
+}
+.left_block {
+  position: absolute;
+  top: 50px;
+  left: -50px;
+  background-color: chartreuse;
+  height: 250px;
+  width: 250px;
+}
+.right {
+  margin-left: 10px;
+  width: 100%;
+}
+.right input,
+select {
+  margin-top: 10px;
+  display: block;
+  width: 80%;
+  height: 40px;
+  padding: 5px;
+  border: #ffaaff solid 0.2px;
+  background-color: rgba(120, 90, 20, 0.4);
+  text-align: left;
+}
+select {
+    background: url(darrow.svg) no-repeat right  rgba(120, 90, 20, 0.4);
+    appearance: none;
+    background-position-x: 97% ;
+    background-size: 25px;
+}
+.right button {
+  border: #ffaaaa solid 0.2px;
+  display: block;
+  margin-top: 10px;
+  padding: 10px 30px;
+  background-color: #09dd05;
+}
+
+.main1 {
+  background-color: rosybrown;
+  padding: 20px 10px 30px 10px;
+  margin-bottom: 10px;
+}
+
+.main2 {
+  background-color: skyblue;
+  padding: 10px;
+  height: 100px;
+}
+
+/* footer design */
+.footer {
+  background-color: chartreuse;
+  padding: 20px 0px;
+  margin-top: 10px;
+  color: black;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 15px;
+  font-size: 20px;
+}
+
+.footer > ul {
+  list-style-type: none;
+  max-width:70% ;
+  margin: auto;  
+}
+.footer > ul > li {
+    
+  display: inline-block;
+  border-right: black solid 1px;
+  
+}
+  .footer > ul > li:last-child{
+      
+    border-right: none;
+  
+}
+.footer a:hover {
+
+  background-color: chartreuse;
+  color: #83f;
+
+}

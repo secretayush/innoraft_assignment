@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>jQuery 4</title>
+        <style>
+            /* text design for all content */
+            *{
+                text-align: center;
+                font-size: 30px;
+                text-transform: capitalize;
+                color: white;
+            }
+            
+            /* for head content */
+            .header {
+                background-color: rebeccapurple;
+                padding: 20px;
+                margin: 0px 10px;
+            }
+    
+            /* grid body design */
+            .mid{
+                height: 400px;
+                margin: 10px;
+            }
+            .left {
+                background-color: blueviolet;
+                padding: 10px;
+                height: 400px;
+                width: 480px;
+                float: left;
+                margin-bottom: 10px;
+            }
+    
+            .right {
+                overflow: hidden;
+            }
+            .main1 {       
+                background-color: rosybrown;
+                padding: 10px;
+                height: 275px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+            .main2 {
+                background-color: skyblue;
+                padding: 40px;
+                margin-left: 10px;
+            }
+            /* footer design */
+            .footer {
+                clear: both;
+                background-color: chartreuse;
+                padding: 50px 0px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <a href="#">
+        <div class="header">Header</div></a>
+        <!-- grid container -->
+        
+        <div class="mid">
+            <a href="#"><div class="left">Side bar</div></a>
+            <!-- right grid -->
+            <div class="right">
+                <a href="#"><div class="main1">main content</div></a>
+                <a href="#"><div class="main2">extra main</div></a>
+            </div>
+        </div>
+        <a href="#"><div class="footer">Footer</div></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.header').click(function(){
+                $(this).css('background-color','red');
+            });
+            $('.left').click(function(){
+                $(this).text('LeftBar');
+            });
+            $('.main2').click(function(){
+                $('.main1').fadeOut('slow');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jquery 3</title>
+</head>
+
+<body>
+    <form action="#">
+        <label for="fname">First name</label><br>
+        <input type="text" id="fname"><br>
+        <label for="lname">Last name</label><br>
+        <input type="text" id="lname"><br><br>
+        <div class="message"></div>
+        <button id="click">Click me</button><br>
+
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#click').css({
+                "padding": "5px",
+                "text-align": "center"
+            });
+            $('#click').click(function () {
+
+                let f_name = $('#fname').val();
+                let l_name = $('#lname').val();
+                console.log(f_name);
+                console.log(l_name);
+                if(f_name === "" && l_name === ""){
+                    $('.message').text('Please fill all the filed');
+                    
+                }
+                else if (f_name === "") {
+                    $('.message').text('First name is missing');    
+                }
+                else if (l_name === "") {
+                    $('.message').text('last name is missing');
+                    
+                } else {
+                    $('.message').text('Thanks Your record is sumbited');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

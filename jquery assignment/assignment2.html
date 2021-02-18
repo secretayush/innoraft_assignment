@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jquery 2</title>
+</head>
+<body>
+    <div id="click">Click to show/hide data.</div>
+    <div id="data">
+        <h1>Hello World!</h1>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#click').css({
+                "backgroundColor": "#571",
+            "color": "black",
+            "border": "black solid 1px",
+            "padding": "10px",
+            "text-align": "center"
+        });
+
+        $('#data').css({
+            "backgroundColor": "#872",
+            "color": "black",
+            "border": "black solid 1px",
+            "padding": "20px",
+            "text-align": "center",
+            "display":"none"
+        });    
+        $('#click').click(function () {
+               $('#data').slideToggle(2000); 
+        });
+    });
+    </script>
+</body>
+</html>
